@@ -1,0 +1,143 @@
+/* Body keseluruhannya */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar / Navbar */
+.navbar {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #0b6aadff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #32c992ff;
+}
+
+/* Mobile-friendly */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .nav-links {
+    flex-direction: column; 
+    width: 100%;            
+    gap: 10px;              
+  }
+  .nav-links li {
+    text-align: center;     
+  }
+}
+
+/* Bagian Div / Kotak pembungkus Keseluruhan / Layout*/
+.div {
+  display: flex;        
+  align-items: center;    
+  gap: 30px;  
+  margin-top: 30px;
+  margin-bottom: 30px;   
+  padding: 40px;
+  box-sizing: border-box; 
+}
+
+/* Gambar */
+.div img {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;    
+}
+
+/* Teks */
+.text {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.text h1 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.text h3 {
+  margin-top: 10px;
+}
+
+/* Responsif untuk layar kecil (Hanphone / tablet) */
+@media (max-width: 768px) {
+  .div {
+    flex-direction: column;  
+    text-align: center;
+    padding: 20px;
+  }
+
+  .div img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    padding: 40px 10px;
+  }
+}
+
+/* Footer / Penutup */
+.footer {
+    background: linear-gradient(to right, #440b7aff, #1cabb8ff, #11b08eff);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-weight: bold;
+}
+
+.footer p {
+    color: black;
+    padding: 5px;
+}
+
+.footer a {
+    color: black
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: white
+}
+
